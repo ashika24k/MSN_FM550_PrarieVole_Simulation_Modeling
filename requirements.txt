@@ -1,0 +1,7 @@
+neuron
+numpy
+pandas
+matplotlib
+scipy
+statsmodels
+openpyxl

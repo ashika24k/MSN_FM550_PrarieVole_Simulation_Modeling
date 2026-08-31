@@ -1,0 +1,61 @@
+# Values of maximal conductance (gbar) or permeability (pbar, for calcium
+# mechanisms) for the MSN model in Lindroos2020.
+#
+# This table brings together two sources of values from the original Lindroos
+# model: (1) the files `params_iMSN.json` and `params_dMSN.json`, and (2)
+# default values for both iMSN and dMSN hardcoded in the class MSN in file
+# MSN_builder.py. A commented line below was added to visually separate these
+# two data sources.
+#
+# Columns:
+#   cell <string>: 'imsn' | 'dmsn' | 'all'
+#   mechanism <string>: 'naf', 'bk', etc.
+#   compartment <string>: 'all' | 'soma' | 'dend' | 'axon'
+#   value <numeric>: Value of gmax (or pmax for calcium)
+#
+# A Gonzalez
+# 04 Feb 2021
+cell	mechanism	compartment	value
+imsn	pas	all	1.25e-5
+imsn	naf	soma	12
+imsn	naf	dend	0.9
+imsn	naf	axon	9
+imsn	kaf	soma	0.08
+imsn	kaf	dend	0.08
+imsn	kas	soma	0.016
+imsn	kas	dend	0.012
+imsn	kas	axon	0.007
+imsn	kdr	soma	9.4e-4
+imsn	kdr	dend	7e-4
+imsn	kir	soma	0.0012
+imsn	kir	dend	0.0012
+imsn	sk	soma	2e-5
+imsn	sk	dend	2e-5
+imsn	bk	soma	1.3e-4
+imsn	bk	dend	1e-4
+dmsn	pas	all	1.25e-5
+dmsn	naf	soma	12
+dmsn	naf	dend	0.9
+dmsn	naf	axon	9
+dmsn	kaf	soma	0.15
+dmsn	kaf	dend	0.12
+dmsn	kas	soma	0.016
+dmsn	kas	dend	0.012
+dmsn	kas	axon	0.007
+dmsn	kdr	soma	9.4e-4
+dmsn	kdr	dend	7e-4
+dmsn	kir	soma	0.0012
+dmsn	kir	dend	0.0012
+dmsn	sk	soma	2e-5
+dmsn	sk	dend	2e-5
+dmsn	bk	soma	1.3e-4
+dmsn	bk	dend	1e-4
+# Default values for both iMSN and dMSN, from class MSN
+all	cal12	soma	1.34e-05
+all	cal13	soma	1.34e-06
+all	car	soma	0.000134
+all	can	soma	4e-05
+all	km	axon	0.001
+all	cal12	dend	1e-05
+all	cal13	dend	1e-06
+all	car	dend	0.0001
